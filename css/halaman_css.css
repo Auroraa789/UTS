@@ -1,0 +1,163 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: "Raleway", sans-serif;
+  background-color: #110A16;
+  background-image: url("../image/bg3.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header, main, footer {
+  padding: 40px;
+  text-align: center;
+  color: azure;
+}
+
+/* HEADER */
+
+header {
+  padding-top: 100px; 
+}
+
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  padding: 60px;
+}
+
+.text-container {
+  max-width: 600px;
+}
+
+.navbar {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 15px 30px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 999;
+  backdrop-filter: blur(5px);
+	  display: flex; 
+  justify-content: left 6px; 
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  gap: 30px;
+  margin: 0;
+}
+
+.navbar li a {
+  text-decoration: none;
+  color: #BE94F0;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.navbar li a:hover {
+  color: #ffffff;
+}
+
+
+
+.judul {
+  font-family: "Anton", sans-serif;
+  font-size: 60px;
+  color: #BE94F0;
+  margin-bottom: 20px;
+}
+
+.p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.img1 {
+  width: 300px;
+  height: 300px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+/* MAIN */
+.h2 {
+  font-family: "Anton", sans-serif;
+  font-size: 50px;
+  color: #BE94F0;
+	text-align: center;
+  margin-top: -10px;
+	margin-bottom: 60px;
+	padding-top: 0px;
+}
+
+.pmain {
+	margin-top: -60px;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.carousel {
+  width: 80%;
+  max-width: 800px;
+  margin: 40px auto 80px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.carousel-container {
+  display: flex;
+  animation: slide 20s infinite;
+}
+
+.carousel-item {
+  min-width: 100%;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+}
+
+@keyframes slide {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-100%); }
+  50% { transform: translateX(-200%); }
+  75% { transform: translateX(-300%); }
+  100% { transform: translateX(0); }
+}
+
+/* FOOTER */
+footer {
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 20px 0;
+  margin-top: auto;
+}
+
+.pfooter a {
+  color: azure;
+  font-size: 20px;
+  text-decoration: none;
+}
